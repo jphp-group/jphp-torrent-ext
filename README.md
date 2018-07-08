@@ -54,5 +54,6 @@ $tp->setComment("test");
 $tp->setPieceLength(100);
 $tp->setAnnounceURL(null); // Often, you can leave empty, because the tracker itself overwrites this header.
 $tp->setName("test"); // In what folder will be the data downloaded through our torrent file
+$tp->addFile("path/to/file");
 $tp->save("./test.torrent");
 ```
