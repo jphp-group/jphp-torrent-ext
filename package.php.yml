@@ -1,0 +1,25 @@
+name: jphp-torrent-ext
+version: 1.0.0
+description: JBit Torrent API for jphp
+
+plugins:
+ - Gradle
+ - Doc
+ - Hub
+
+gradle:
+  providedDeps:
+   - file:./jars/jBittorrentAPI.jar
+   - file:./jars/trackerBT.jar
+
+deps:
+  jphp-runtime: '*'
+
+hub:
+  login: 'yousan4ik@gmail.com'
+
+doc:
+  url-prefix: https://github.com/jphp-group/jphp-torrent-ext/blob/master/api-docs/
+  langs:
+    en: English
+    ru: Русский
